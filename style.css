@@ -1,0 +1,141 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4A148C; /* Deep Purple */
+}
+
+.navbar-brand, .nav-link, .dropdown-item {
+    color: #ffffff !important; /* White text */
+}
+
+/* Sections */
+.sec-1 {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* White background */
+}
+
+.text-part {
+    padding: 10px;
+    text-align: center;
+}
+
+.sec-1 h1 {
+    font-size: 36px;
+    color: #333333;
+}
+
+.sec-1 h3 {
+    font-size: 24px;
+    color: #555555;
+    margin-top: 20px;
+}
+
+.img-part {
+    padding-left: 50px;
+}
+
+.img-part img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.download {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4A148C; /* Deep Purple Button */
+    border-radius: 20px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.download:hover {
+    background-color: #6A1B9A; /* Slightly lighter on hover */
+}
+
+.sec-2 {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.App-part {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    overflow-x: scroll;
+}
+
+.App-part .app-img {
+    padding: 20px;
+}
+
+.App-part .app-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sec-3 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.sec-3 .container .text-part {
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    background-color: #282e34;
+    color: #ddd;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .sec-1, .sec-3 {
+        padding: 30px;
+        display: block;
+        text-align: center;
+    }
+    .sec-3 .container {
+        display: block;
+        flex-direction: reverse;
+    }
+    .sec-1 {
+        display: block;
+        flex-direction: column-reverse;
+    }
+    .sec-1 .img-part {
+        padding-left: 0;
+        padding-top: 50px;
+    }
+    .sec-1 h1 {
+        font-size: 28px;
+    }
+    .sec-1 h3 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .App-part .app-img img {
+        width: 200px;
+        height: 350px;
+    }
+    .footer {
+        font-size: 16px;
+    }
+}
