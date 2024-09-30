@@ -78,7 +78,13 @@
     font-weight: bold;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
+.AppDemo{
+    text-align: center;
+    padding: 20px;
+}
+.AppDemo video{
+    border-radius: 15px;
+}
 .sec-2 {
     background-color: var(--background-light);
     padding: 40px;
