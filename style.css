@@ -31,7 +31,7 @@
 .sec-1 {
     width: 100%;
     height: 100%;
-    padding: 80px 20px;
+    padding: 130px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,9 +81,15 @@
 .AppDemo{
     text-align: center;
     padding: 20px;
+    background-image: url(assets/img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 .AppDemo video{
     border-radius: 15px;
+    width: 300px;
 }
 .sec-2 {
     background-color: var(--background-light);
@@ -335,7 +341,9 @@
         width: 250px; 
         height: auto;
     }
-
+    .AppDemo video{
+        width: 250px;
+    }
     .footer {
         font-size: 16px;
     }
